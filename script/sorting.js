@@ -1,4 +1,3 @@
-
 let stopSorting = false;
 let paused= false;
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -109,7 +108,7 @@ function createBars(){
         const div = document.createElement('div');
         div.className='cell';
 
-        const normalizeH = (Array[i]/maxValue)*50;
+        const normalizeH = (Array[i]/maxValue)*65;
         div.style.height=`${normalizeH}vh`;
  
         container.appendChild(div);
@@ -163,9 +162,7 @@ async function waitWhilePaused() {
   
 
 document.querySelector('#arr_sz').addEventListener('input', createBars);
-document.querySelector('#speed_input').addEventListener('input', () => {
 
-});
 
 document.querySelector('.start').addEventListener('click', async function(){
     disable();
