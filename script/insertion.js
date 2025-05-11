@@ -1,3 +1,4 @@
+
 async function insertionSort(array) {
     const timeComplexitySpan = document.querySelector('.time');
     const spaceComplexitySpan = document.querySelector('.space');

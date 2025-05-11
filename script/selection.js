@@ -1,3 +1,4 @@
+
 async function selectionSort(array) {
     const timeComplexitySpan = document.querySelector('.time');
     const spaceComplexitySpan = document.querySelector('.space');
