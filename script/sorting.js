@@ -175,3 +175,32 @@ document.querySelector('.newArray').addEventListener('click', function(){
 })
 
 document.addEventListener('DOMContentLoaded',createBars);
+
+const rangeInput = document.getElementById('arr_sz');
+
+  function updateRangeLimits() {
+    const screenWidth = window.innerWidth;
+    let min, max;
+
+    // Define min and max based on screen width
+    if (screenWidth <= 500) {
+      min = 10;
+      max = 60;
+    } else if (screenWidth <= 1024) {
+      min = 20;
+      max = 200;
+    } else {
+      min = 30;
+      max = 300;
+    }
+
+    
+    rangeInput.min = min;
+    rangeInput.max = max;
+    rangeInput.value = Math.floor((min + max) / 2); // Set value to midpoint
+    createBars();
+  }
+
+  updateRangeLimits();
+
+  window.addEventListener('resize', updateRangeLimits);

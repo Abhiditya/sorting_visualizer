@@ -40,6 +40,7 @@ body {
   padding-block: 0.5em;
   color: var(--accent-pink);
   cursor: pointer;
+  padding: 0.8rem 0 0.5rem 0;
 }
 .title:hover {
   color: var(--button-green);
@@ -53,11 +54,12 @@ body {
   gap: 0.8em;
   font-size: 1em;
   min-height: 70px;
-  padding-block: 0.6rem;
+  padding-block: 1rem;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: var(--primary-bg);
   border-bottom: 2px solid var(--accent-pink);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding: 0.5rem;
 }  
 
 .navbar select,
@@ -130,16 +132,15 @@ input{
 .array {
   display: flex;
   align-items: flex-end; 
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1px;
+  flex-wrap: nowrap;
+  gap: 2px;
   margin: 0.5rem auto;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
-  width: 100%;
+  width: calc(100% - 1rem);
+  max-width: 1480px;
   height: auto;
-  max-width: 500px;
   background-color: #fff;
   overflow-x: hidden;
 }
@@ -180,7 +181,7 @@ input{
   border: 1px solid #0D47A1;
 }
 .overwrite {
-  background-color: #FF9F1C; /* warm amber highlight */
+  background-color: #FF9F1C; 
   border: 1px solid #e07b00;
 }
 
@@ -206,7 +207,6 @@ input{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
   color: black;
   border-radius: 10px;
@@ -220,28 +220,28 @@ input{
 }
 
 .color_box {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  margin-right: 8px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  margin-right: 0.8rem;
+  margin-left: 2rem;
   border: 1px solid white;
 }
 .complexity {
   padding: 1rem ;
   width: 20rem;
-  margin: auto;
   background-color: var(--primary-bg);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
   border: 2px solid var(--accent-pink);
-  flex-shrink: 0;
+  margin: 0 2rem 0.5rem 2rem;
 }
 
 
 .complexity h3 {
   font-size: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.8rem;
   color: var(--text-light);
   font-weight: normal;
 }
