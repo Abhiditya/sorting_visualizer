@@ -142,6 +142,12 @@ async function startSort(){
         if(algo ==='5'){
             await quickSort(array);
         }
+        if(algo ==='6'){
+            await heapSort(array);
+        }
+        if(algo ==='7'){
+            await shellSort(array);
+        }
     } else {
         alert("Please select a sorting algorithm.");
     }
@@ -182,7 +188,7 @@ const rangeInput = document.getElementById('arr_sz');
     const screenWidth = window.innerWidth;
     let min, max;
 
-    // Define min and max based on screen width
+    //min and max based on screen width
     if (screenWidth <= 500) {
       min = 10;
       max = 60;
@@ -197,7 +203,7 @@ const rangeInput = document.getElementById('arr_sz');
     
     rangeInput.min = min;
     rangeInput.max = max;
-    rangeInput.value = Math.floor((min + max) / 2); // Set value to midpoint
+    rangeInput.value = Math.floor((min + max) / 2);
     createBars();
   }
 

@@ -19,6 +19,8 @@
                 <option value="3">Insertion Sort</option>
                 <option value="4">Merge Sort</option>
                 <option value="5">Quick Sort</option>
+                <option value="6">Heap Sort</option>
+                <option value="7">Shell Sort</option>
             </select>
             <a id="size">Size
                 <input id="arr_sz" type="range" step="1" />
@@ -42,9 +44,9 @@
             <div class="legend-item"><span class="color_box swap"></span>Swap</div>
             <div class="legend-item"><span class="color_box allSorted"></span>Sorted</div>
         </div>
-          
-        <div class="array" id="array"></div>
-        
+        <div class="board-container">
+            <div class="array" id="array"></div>
+        </div>
         
     </div>
     <script src="script/sorting.js"></script>
@@ -53,5 +55,7 @@
     <script src="script/selection.js"></script>
     <script src="script/quick.js"></script>
     <script src="script/insertion.js"></script>
+    <script src="script/heap.js"></script>
+    <script src="script/shell.js"></script>
 </body>
 </html>
